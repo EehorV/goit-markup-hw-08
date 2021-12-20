@@ -5,14 +5,14 @@
   display: flex;
   list-style-type: none;
 }
-.advantages-list-item {
+.advantages__item {
   width: 270px;
 
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
-.advantages-icon {
+.advantages__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +28,7 @@
   font-weight: 700;
   margin-bottom: 10px;
 }
-.advan-text {
+.advan-descrip__text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);

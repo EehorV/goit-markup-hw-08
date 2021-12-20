@@ -28,17 +28,21 @@
             ><span class="top-logo">Studio</span>
           </a>
           <!--Навигация на другие страницы-->
-          <ul class="nav-pages">
-            <li class="menu"><a href="" class="pages active">Студия</a></li>
-            <li class="menu">
-              <a href="./portfolio.html" class="pages">Портфолио</a>
+          <ul class="nav-pages list">
+            <li class="nav-pages__menu">
+              <a href="" class="pages link nav-pages__menu--active">Студия</a>
             </li>
-            <li class="menu"><a href="" class="pages">Контакты</a></li>
+            <li class="nav-pages__menu">
+              <a href="./portfolio.html" class="pages link">Портфолио</a>
+            </li>
+            <li class="nav-pages__menu">
+              <a href="" class="pages link">Контакты</a>
+            </li>
           </ul>
         </nav>
 
-        <ul class="nav-contacts">
-          <li class="mail-tel-top">
+        <ul class="nav-contacts list">
+          <li class="nav-contacts__mail-tel-top">
             <a class="contacts" href="mailto:info@devstudio.com">
               <svg class="contacts-icons" width="16" height="12">
                 <use href="./images/icons.svg#icon-mail-icon"></use>
@@ -46,7 +50,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="mail-tel-top">
+          <li class="nav-contacts__mail-tel-top">
             <a class="contacts" href="tel:+38096111111">
               <svg class="contacts-icons" width="10" height="16">
                 <use href="./images/icons.svg#icon-tel-icon"></use>
@@ -60,13 +64,13 @@
     <main>
       <!--БЛОК герой-->
 
-      <section class="section-hero overlay">
+      <section class="hero overlay">
         <div class="container">
-          <h1 class="hero-heading">
+          <h1 class="hero__heading">
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <button class="hero-button" type="button" data-modal-open>
+          <button class="hero__button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -80,50 +84,50 @@
           <h2 class="visually-hidden">Преимущества работы с нами</h2>
           <!--Скрытый заголовок h2 секции-->
           <ul class="advantages">
-            <li class="advantages-list-item">
-              <div class="advantages-icon">
+            <li class="advantages__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-advan-1"></use>
                 </svg>
               </div>
               <h3 class="advan-descrip">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-              <p class="advan-text">
+              <p class="advan-descrip__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="advantages-list-item">
-              <div class="advantages-icon">
+            <li class="advantages__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-advan-2"></use>
                 </svg>
               </div>
               <h3 class="advan-descrip">ПУНКТУАЛЬНОСТЬ</h3>
-              <p class="advan-text">
+              <p class="advan-descrip__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="advantages-list-item">
-              <div class="advantages-icon">
+            <li class="advantages__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-advan-3"></use>
                 </svg>
               </div>
               <h3 class="advan-descrip">ПЛАНИРОВАНИЕ</h3>
-              <p class="advan-text">
+              <p class="advan-descrip__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="advantages-list-item">
-              <div class="advantages-icon">
+            <li class="advantages__item">
+              <div class="advantages__icon">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-advan-4"></use>
                 </svg>
               </div>
               <h3 class="advan-descrip">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-              <p class="advan-text">
+              <p class="advan-descrip__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -140,35 +144,35 @@
             <li>
               <div class="direction">
                 <img
-                  class="direction-img"
+                  class="direction__img"
                   src="./images/img(1).jpg"
                   alt="Десктопные приложения"
                   width="370"
                 />
 
-                <p class="direction-label">Десктопные приложения</p>
+                <p class="direction__label">Десктопные приложения</p>
               </div>
             </li>
             <li>
               <div class="direction">
                 <img
-                  class="direction-img"
+                  class="direction__img"
                   src="./images/img(2).jpg"
                   alt="Мобильные приложения"
                   width="370"
                 />
-                <p class="direction-label">Мобильные приложения</p>
+                <p class="direction__label">Мобильные приложения</p>
               </div>
             </li>
             <li>
               <div class="direction">
                 <img
-                  class="direction-img"
+                  class="direction__img"
                   src="./images/img.jpg"
                   alt="Гибридные приложения"
                   width="370"
                 />
-                <p class="direction-label">Дизайнерские решения</p>
+                <p class="direction__label">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
@@ -179,7 +183,7 @@
         <div class="container">
           <h2 class="main-page-secondary-title">Наша команда</h2>
           <ul class="team">
-            <li class="team-img">
+            <li class="team__img">
               <img
                 src="./images/product-des.jpg"
                 alt="product designer"
@@ -188,7 +192,7 @@
               <div class="developers-title">
                 <h3 class="developers">Игорь Демьяненко</h3>
                 <p class="position" lang="en">Product designer</p>
-                <ul class="team-contacts-icons">
+                <ul class="team-contacts-icons list">
                   <li class="social-item" aria-label="Инстаграм">
                     <a
                       href=""
@@ -240,7 +244,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-img">
+            <li class="team__img">
               <img
                 src="./images/frontend-dev.jpg"
                 alt="front-end developer"
@@ -249,7 +253,7 @@
               <div class="developers-title">
                 <h3 class="developers">Ольга Репина</h3>
                 <p class="position" lang="en">Front-end developer</p>
-                <ul class="team-contacts-icons">
+                <ul class="team-contacts-icons list">
                   <li class="social-item" aria-label="Инстаграм">
                     <a
                       href=""
@@ -301,12 +305,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-img">
+            <li class="team__img">
               <img src="./images/marketing.jpg" alt="marketing" width="270" />
               <div class="developers-title">
                 <h3 class="developers">Николай Тарасов</h3>
                 <p class="position" lang="en">Marketing</p>
-                <ul class="team-contacts-icons">
+                <ul class="team-contacts-icons list">
                   <li class="social-item" aria-label="Инстаграм">
                     <a
                       href=""
@@ -358,12 +362,12 @@
                 </ul>
               </div>
             </li>
-            <li class="team-img">
+            <li class="team__img">
               <img src="./images/ui-des.jpg" alt="ui designer" width="270" />
               <div class="developers-title">
                 <h3 class="developers">Михаил Ермаков</h3>
                 <p class="position" lang="en">UI designer</p>
-                <ul class="team-contacts-icons">
+                <ul class="team-contacts-icons list">
                   <li class="social-item" aria-label="Инстаграм">
                     <a
                       href=""
@@ -424,8 +428,8 @@
           <h2 class="clients-title main-page-secondary-title">
             Постоянные клиенты
           </h2>
-          <ul class="clients-list">
-            <li class="clients-item">
+          <ul class="clients-list list">
+            <li class="clients-list__item">
               <a
                 class="clients-link"
                 href=""
@@ -437,7 +441,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-list__item">
               <a
                 class="clients-link"
                 href=""
@@ -449,7 +453,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-list__item">
               <a
                 class="clients-link"
                 href=""
@@ -461,7 +465,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-list__item">
               <a
                 class="clients-link"
                 href=""
@@ -473,7 +477,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-list__item">
               <a
                 class="clients-link"
                 href=""
@@ -485,7 +489,7 @@
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
+            <li class="clients-list__item">
               <a
                 class="clients-link"
                 href=""
@@ -511,13 +515,13 @@
           </a>
           <address>
             г. Киев, пр-т Леси Украинки, 26
-            <ul class="footer-contacts">
-              <li class="footer-item-contact">
+            <ul class="footer-contacts list">
+              <li class="footer-contacts__item">
                 <a class="contacts" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-item-contact">
+              <li class="footer-contacts__item">
                 <a class="contacts" href="tel:+38099111111"
                   >+38 099 111 11 11</a
                 >
@@ -527,7 +531,7 @@
         </div>
         <div class="join">
           <h2 class="join-title">Присоединяйтесь</h2>
-          <ul class="social join-list">
+          <ul class="social list">
             <li class="social-item" aria-label="Инстаграм">
               <a
                 href=""
@@ -606,10 +610,10 @@
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <!-- Кнопка закрытия -->
         <form class="modal-form" name="callback">
-          <label class="modal-item">
+          <label class="modal-form__item">
             <span class="modal-label">Имя</span>
             <div class="input-wrap">
               <input
@@ -623,7 +627,7 @@
               </svg>
             </div>
           </label>
-          <label class="modal-item">
+          <label class="modal-form__item">
             <span class="modal-label">Телефон</span>
             <div class="input-wrap">
               <input
@@ -637,7 +641,7 @@
               </svg>
             </div>
           </label>
-          <label class="modal-item">
+          <label class="modal-form__item">
             <span class="modal-label">Почта</span>
             <div class="input-wrap">
               <input
@@ -651,7 +655,7 @@
               </svg>
             </div>
           </label>
-          <label class="modal-item">
+          <label class="modal-form__item">
             <span class="modal-label">Комментарий</span>
             <textarea
               class="modal-textarea"

@@ -55,7 +55,7 @@
 .modal-close {
   fill: currentColor;
 }
-.modal-title {
+.modal__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -66,7 +66,7 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.modal-item {
+.modal-form__item {
   position: relative;
   display: block;
   margin-bottom: 10px;

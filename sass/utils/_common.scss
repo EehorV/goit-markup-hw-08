@@ -37,13 +37,11 @@ img {
 .section {
   padding: 94px 0 94px 0;
 }
-.nav-pages,
-.nav-contacts,
-.pages,
-.team-contacts-icons,
-.clients-list,
-.footer-contacts,
-.join-list {
+.link {
+  text-decoration: none;
+}
+
+.list {
   list-style-type: none;
   text-decoration: none;
 }

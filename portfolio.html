@@ -29,18 +29,22 @@
               ><span class="top-logo">Studio</span>
             </a>
             <!--Навигация на другие страницы-->
-            <ul class="nav-pages">
-              <li class="menu">
-                <a href="./index.html" class="pages">Студия</a>
+            <ul class="nav-pages list">
+              <li class="nav-pages__menu">
+                <a href="./index.html" class="pages link">Студия</a>
               </li>
-              <li class="menu">
-                <a href="" class="pages active">Портфолио</a>
+              <li class="nav-pages__menu">
+                <a href="" class="pages link nav-pages__menu--active"
+                  >Портфолио</a
+                >
               </li>
-              <li class="menu"><a href="" class="pages">Контакты</a></li>
+              <li class="nav-pages__menu">
+                <a href="" class="pages link">Контакты</a>
+              </li>
             </ul>
           </nav>
-          <ul class="nav-contacts">
-            <li class="mail-tel-top">
+          <ul class="nav-contacts list">
+            <li class="nav-contacts__mail-tel-top">
               <a class="contacts" href="mailto:info@devstudio.com">
                 <svg class="contacts-icons" width="16" height="12">
                   <use href="./images/icons.svg#icon-mail-icon"></use>
@@ -48,7 +52,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="mail-tel-top">
+            <li class="nav-contacts__mail-tel-top">
               <a class="contacts" href="tel:+38096111111">
                 <svg class="contacts-icons" width="10" height="16">
                   <use href="./images/icons.svg#icon-tel-icon"></use>
@@ -66,19 +70,19 @@
       <section class="section">
         <div class="container">
           <ul class="products">
-            <li class="btn-products">
+            <li class="products__item">
               <button class="tabs" type="button">Все</button>
             </li>
-            <li class="btn-products">
+            <li class="products__item">
               <button class="tabs" type="button">Веб-сайты</button>
             </li>
-            <li class="btn-products">
+            <li class="products__item">
               <button class="tabs" type="button">Приложения</button>
             </li>
-            <li class="btn-products">
+            <li class="products__item">
               <button class="tabs" type="button">Дизайн</button>
             </li>
-            <li class="btn-products">
+            <li class="products__item">
               <button class="tabs" type="button">Маркетинг</button>
             </li>
           </ul>
@@ -86,7 +90,7 @@
 
         <div class="container">
           <ul class="examples">
-            <li class="examples-mockups">
+            <li class="examples__mockups">
               <div class="thumb">
                 <img src="./images/img0.jpg" alt="" width="370" />
                 <p class="mockups-info">
@@ -100,7 +104,7 @@
                 <p class="type">Веб-сайт</p>
               </div>
             </li>
-            <li class="examples-mockups">
+            <li class="examples__mockups">
               <div class="thumb">
                 <img src="./images/img1.jpg" alt="" width="370" />
                 <p class="mockups-info">
@@ -114,7 +118,7 @@
                 <p class="type">Дизайн</p>
               </div>
             </li>
-            <li class="examples-mockups">
+            <li class="examples__mockups">
               <div class="thumb">
                 <img src="./images/img2.jpg" alt="" width="370" />
                 <p class="mockups-info">
@@ -128,7 +132,7 @@
                 <p class="type">Приложение</p>
               </div>
             </li>
-            <li class="examples-mockups">
+            <li class="examples__mockups">
               <div class="thumb">
                 <img src="./images/img3.jpg" alt="" width="370" />
                 <p class="mockups-info">
@@ -142,7 +146,7 @@
                 <p class="type">Маркетинг</p>
               </div>
             </li>
-            <li class="examples-mockups">
+            <li class="examples__mockups">
               <div class="thumb">
                 <img src="./images/img4.jpg" alt="" width="370" />
                 <p class="mockups-info">
@@ -156,7 +160,7 @@
                 <p class="type">Приложение</p>
               </div>
             </li>
-            <li class="examples-mockups">
+            <li class="examples__mockups">
               <div class="thumb">
                 <img src="./images/img5.jpg" alt="" width="370" />
                 <p class="mockups-info">
@@ -170,7 +174,7 @@
                 <p class="type">Веб-сайт</p>
               </div>
             </li>
-            <li class="examples-mockups">
+            <li class="examples__mockups">
               <div class="thumb">
                 <img src="./images/img6.jpg" alt="" width="370" />
                 <p class="mockups-info">
@@ -184,7 +188,7 @@
                 <p class="type">Дизайн</p>
               </div>
             </li>
-            <li class="examples-mockups">
+            <li class="examples__mockups">
               <div class="thumb">
                 <img src="./images/img7.jpg" alt="" width="370" />
                 <p class="mockups-info">
@@ -198,7 +202,7 @@
                 <p class="type">Маркетинг</p>
               </div>
             </li>
-            <li class="examples-mockups">
+            <li class="examples__mockups">
               <div class="thumb">
                 <img src="./images/img8.jpg" alt="" width="370" />
                 <p class="mockups-info">
@@ -226,13 +230,13 @@
           >
           <address>
             г. Киев, пр-т Леси Украинки, 26
-            <ul class="footer-contacts">
-              <li class="footer-item-contact">
+            <ul class="footer-contacts list">
+              <li class="footer-contacts__item">
                 <a class="contacts" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-item-contact">
+              <li class="footer-contacts__item">
                 <a class="contacts" href="tel:+38099111111"
                   >+38 099 111 11 11</a
                 >
@@ -242,7 +246,7 @@
         </div>
         <div class="join">
           <h2 class="join-title">Присоединяйтесь</h2>
-          <ul class="social join-list">
+          <ul class="social list">
             <li class="social-item" aria-label="Инстаграм">
               <a
                 href=""
