@@ -241,6 +241,139 @@ img {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .icon-menu-close,
+  .header-btn__icon--open {
+    display: none;
+  }
+}
+
+.header-btn__icon--open.is-open .icon-menu-close {
+  display: block;
+}
+
+.header-btn__icon--open .icon-menu {
+  display: none;
+}
+
+.modal-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .modal-menu {
+    display: none;
+  }
+}
+
+.modal-menu.is-open {
+  visibility: visible;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.modal-menu__list {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+
+.modal-menu__item:not(last-child) {
+  margin-bottom: 32px;
+}
+
+.modal-menu__link {
+  color: #212121;
+}
+
+.modal-menu__link--current {
+  color: var(--accent-color);
+}
+
+.modal-menu__contacts {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+}
+
+.modal-menu__contacts-item {
+  margin-bottom: 32px;
+}
+
+.modal-menu__contacts-item:last-child {
+  margin-bottom: 0;
+}
+
+.modal-menu__contacts-link {
+  color: #757575;
+}
+
+.modal-menu__contacts-link.tel {
+  font-size: 34px;
+  color: #2196f3;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.socials__item {
+  margin-right: 20px;
+  position: relative;
+}
+
+.socials__item:last-child {
+  margin-right: 0;
+}
+
+.socials__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.2);
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.socials__link {
+  color: #2196f3;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,6 +473,12 @@ img {
   line-height: 1.71;
   color: var(--secondary-text-color);
   font-weight: 400;
+}
+
+@media screen and (max-width: 1199px) {
+  .what-we-do {
+    display: none;
+  }
 }
 
 .trends {
