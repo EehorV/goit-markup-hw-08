@@ -99,6 +99,12 @@ img {
   margin-right: 93px;
 }
 
+@media screen and (max-width: 480px) {
+  .logo {
+    margin-right: 0;
+  }
+}
+
 .top-logo {
   color: var(--primary-text-color);
 }
@@ -188,17 +194,17 @@ img {
   padding: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .nav-pages {
+    display: none;
+  }
+}
+
 .nav-pages__menu:not(:last-child) {
   margin-right: 50px;
 }
 
 .nav-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -207,8 +213,32 @@ img {
   margin-left: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .nav-contacts {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .nav-contacts__mail-tel-top + .nav-contacts__mail-tel-top {
   margin-left: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .nav-contacts__mail-tel-top {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
 .hero {

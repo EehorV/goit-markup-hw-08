@@ -3,6 +3,9 @@
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   margin-right: 93px;
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+  }
 }
 
 .top-logo {
@@ -88,6 +91,9 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   padding: 0;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 
 .nav-pages__menu:not(:last-child) {
@@ -95,16 +101,31 @@
 }
 
 .nav-contacts {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  // margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   padding-right: 0;
   margin-left: auto;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav-contacts__mail-tel-top + .nav-contacts__mail-tel-top {
   margin-left: 50px;
+}
+
+.nav-contacts__mail-tel-top {
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
