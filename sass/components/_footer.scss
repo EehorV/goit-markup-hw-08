@@ -9,6 +9,10 @@
 }
 .address-join-footer {
   display: flex;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .join {
   margin-left: 70px;
@@ -33,14 +37,17 @@
 }
 
 .subscribe {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   margin-left: 93px;
-  position: relative;
-  top: 12px;
+  // position: relative;
+  // top: 12px;
   &-form {
     display: flex;
-    align-items: center;
+    // align-items: center;
+    @media screen and (max-width: 480px) {
+      display: block;
+    }
   }
 }
 
