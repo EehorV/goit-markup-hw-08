@@ -1,17 +1,25 @@
-.icon-menu-close,
-.header-btn__icon--open {
-  @media screen and (min-width: 480px) {
+.header-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: none;
+  background-color: transparent;
+  z-index: 10;
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.header-btn__icon--open.is-open .icon-menu-close {
+.header-btn.is-open .header-btn__icon--open {
+  display: none;
+}
+.header-btn .icon-menu-close {
+  display: none;
+}
+.header-btn.is-open .icon-menu-close {
   display: block;
 }
 
-.header-btn__icon--open .icon-menu {
-  display: none;
-}
 .modal-menu {
   position: fixed;
   top: 0;

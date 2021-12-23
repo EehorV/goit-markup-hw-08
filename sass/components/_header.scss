@@ -93,7 +93,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   padding: 0;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -112,7 +112,7 @@
   letter-spacing: 0.02em;
   padding-right: 0;
   margin-left: auto;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   @media screen and (min-width: 1200px) {
@@ -121,9 +121,12 @@
   }
 }
 
-// .nav-contacts__mail-tel-top + .nav-contacts__mail-tel-top {
-//   margin-left: 50px;
-// }
+.nav-contacts__mail-tel-top + .nav-contacts__mail-tel-top {
+  margin-left: 50px;
+  @media screen and (max-width: 1199px) {
+    margin-left: 0;
+  }
+}
 
 .nav-contacts__mail-tel-top {
   @media screen and (max-width: 1199px) {
