@@ -231,10 +231,6 @@ img {
   }
 }
 
-.nav-contacts__mail-tel-top + .nav-contacts__mail-tel-top {
-  margin-left: 50px;
-}
-
 @media screen and (max-width: 1199px) {
   .nav-contacts__mail-tel-top {
     font-size: 12px;
