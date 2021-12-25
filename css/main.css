@@ -254,7 +254,7 @@ img {
   top: 20px;
   border: none;
   background-color: transparent;
-  z-index: 10;
+  z-index: 12;
 }
 
 @media screen and (min-width: 768px) {
@@ -299,6 +299,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 11;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
