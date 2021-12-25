@@ -504,6 +504,12 @@ img {
   padding-bottom: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-advantages {
+    padding-bottom: 60px;
+  }
+}
+
 @media (min-width: 768px) {
   .advantages {
     display: -webkit-box;
@@ -592,6 +598,12 @@ img {
   font-weight: 700;
   margin-bottom: 50px;
   text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .main-page-secondary-title {
+    font-size: 28px;
+  }
 }
 
 .direction {
