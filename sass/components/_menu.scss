@@ -24,6 +24,11 @@
   display: block;
 }
 
+div.modal {
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
+}
 .modal-menu {
   position: fixed;
   top: 0;
